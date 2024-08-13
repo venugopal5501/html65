@@ -1,48 +1,238 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-            .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
+            .navbar.navbar-expand-lg.navbar-dark {
+                position: sticky;
+                top: 0;  
+            }
+            .backg-y{
+                background-color: brown;
+            }
+            footer{
+                background-color: yellow;
+                font-size: 20px;
+                position: sticky;
+                bottom: 0;
+            }
+            
+            .dropdown-item{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .navbar-brand{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
             </style>
-        <body>
-            <nav>
-                <a href="html">HTML</a>
-                <a href="css">CSS</a>
-                <a href="js">javascript</a>
-                <button class="drop">drop down
-                <i class="fa fa-caret-down"></i>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark backg-y">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="Question-1.html">HTML</a>
+                <a class="navbar-brand" href="Question-2.html">CSS</a>
+                <a class="navbar-brand" href="Question3.html">Java Script</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="Question-4.html">Question-4</a></li>
+                                <li><a class="dropdown-item" href="Question-5.html">Question-5</a></li>
+                                <li><a class="dropdown-item" href="Question-6.html">Question-6</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-
-                </nav>
-            </body>
-        </head>
-    </html>
+            </div>
+        </nav>
+        <center><h1>Bootstrap</h1></center>
+        <p>Contents hide
+            (Top)
+            Features
+            History
+            Toggle History subsection
+            Early beginnings
+            Bootstrap 2
+            Bootstrap 3
+            Bootstrap 4
+            Bootstrap 5
+            See also
+            References
+            External links
+            Bootstrap (front-end framework)
+            
+            Article
+            Talk
+            Read
+            Edit
+            View history
+            
+            Tools
+            Appearance hide
+            Text
+            
+            Small
+            
+            Standard
+            
+            Large
+            Width
+            
+            Standard
+            
+            Wide
+            Color (beta)
+            
+            Automatic
+            
+            Light
+            
+            Dark
+            From Wikipedia, the free encyclopedia
+            Bootstrap
+            
+            Original author(s)	Mark Otto, Jacob Thornton
+            Developer(s)	Bootstrap Core Team
+            Initial release	August 19, 2011; 12 years ago
+            Stable release	
+            5.3.3[1] Edit this on Wikidata / 20 February 2024; 5 months ago
+            Repository	Bootstrap Repository
+            Written in	HTML, CSS, Less (v3), Sass (v4) and JavaScript
+            Platform	Web platform
+            License	MIT License[2] (Apache License 2.0 prior to 3.1.0)[3]
+            Website	getbootstrap.com 
+            Bootstrap (formerly Twitter Bootstrap) is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+            
+            As of May 2023, Bootstrap is the 17th most starred project (4th most starred library) on GitHub, with over 164,000 stars.[4] According to W3Techs, Bootstrap is used by 19.2% of all websites.[5]
+            
+            Features
+            Bootstrap is an HTML, CSS and JS library that focuses on simplifying the development of informative web pages (as opposed to web applications). The primary purpose of adding it to a web project is to apply Bootstrap's choices of color, size, font and layout to that project. As such, the primary factor is whether the developers in charge find those choices to their liking. Once added to a project, Bootstrap provides basic style definitions for all HTML elements. The result is a uniform appearance for prose, tables and form elements across web browsers. In addition, developers can take advantage of CSS classes defined in Bootstrap to further customize the appearance of their contents. For example, Bootstrap has provisioned for light- and dark-colored tables, page headings, more prominent pull quotes, and text with a highlight.
+            
+            Bootstrap also comes with several JavaScript components which do not require other libraries like jQuery. They provide additional user interface elements such as dialog boxes, tooltips, progress bars, navigation drop-downs, and carousels. Each Bootstrap component consists of an HTML structure, CSS declarations, and in some cases accompanying JavaScript code. They also extend the functionality of some existing interface elements, including for example an auto-complete function for input fields.
+            
+            Example of a webpage using Bootstrap framework
+            Example of a webpage using Bootstrap framework rendered in Firefox
+            The most prominent components of Bootstrap are its layout components, as they affect an entire web page. The basic layout component is called "Container", as every other element in the page is placed in it. Developers can choose between a fixed-width container and a fluid-width container. While the latter always fills the width with the web page, the former uses one of the five predefined fixed widths, depending on the size of the screen showing the page:[6]
+            
+            Smaller than 576 pixels
+            576–768 pixels
+            768–992 pixels
+            992–1200 pixels
+            1200-1400 pixels
+            Larger than 1400 pixels
+            Once a container is in place, other Bootstrap layout components implement a CSS Flexbox layout through defining rows and columns.
+            
+            A precompiled version of Bootstrap is available in the form of one CSS file and three JavaScript files that can be readily added to any project. The raw form of Bootstrap, however, enables developers to implement further customization and size optimizations. This raw form is modular, meaning that the developer can remove unneeded components, apply a theme and modify the uncompiled Sass files.
+            
+            History
+            Early beginnings
+            Bootstrap, originally named Twitter Blueprint, was developed by Mark Otto and Jacob Thornton at Twitter as a framework to encourage consistency across internal tools. Before Bootstrap, various libraries were used for interface development, which led to inconsistencies and a high maintenance burden. According to Otto:
+            
+            A super small group of developers and I got together to design and build a new internal tool and saw an opportunity to do something more. Through that process, we saw ourselves build something much more substantial than another internal tool. Months later, we ended up with an early version of Bootstrap as a way to document and share common design patterns and assets within the company.[7]
+            
+            After a few months of development by a small group, many developers at Twitter began to contribute to the project as a part of Hack Week, a hackathon-style week for the Twitter development team. It was renamed from Twitter Blueprint to Twitter Bootstrap and released as an open-source project on August 19, 2011.[8] It has continued to be maintained by Otto, Thornton, a small group of core developers, and a large community of contributors.[9]
+            
+            Bootstrap 2
+            On January 31, 2012, Bootstrap 2 was released, which added built-in support for Glyphicons, several new components, as well as changes to many of the existing components. This version supports responsive web design, meaning the layout of web pages adjusts dynamically, taking into account the characteristics of the device used (whether desktop, tablet, mobile phone).[10] Shortly before the release of Bootstrap 2.1.2, Otto and Thornton left Twitter, but committed to continue to work on Bootstrap as an independent project.[11]
+            
+            Bootstrap 3
+            On August 19, 2013, Bootstrap 3 was released. It redesigned components to use flat design and a mobile first approach.[12] Bootstrap 3 features new plugin system with namespaced events. Bootstrap 3 dropped Internet Explorer 7 and Firefox 3.6 support, but there is an optional polyfill for these browsers.[13] Bootstrap 3 was also the first version released under the twbs organization on GitHub instead of the Twitter one.[14]
+            
+            Bootstrap 4
+            Otto announced Bootstrap 4 on October 29, 2014.[15] The first alpha version of Bootstrap 4 was released on August 19, 2015.[16] The first beta version was released on August 10, 2017.[17] Otto suspended work on Bootstrap 3 on September 6, 2016, to free up time to work on Bootstrap 4. Bootstrap 4 was finalized on January 18, 2018.[18]
+            
+            Significant changes include:
+            
+            Major rewrite of the code
+            Replacing Less with Sass
+            Addition of Reboot, a collection of element-specific CSS changes in a single file, based on Normalize
+            Dropping support for IE8, IE9, and iOS 6
+            CSS Flexible Box support
+            Adding navigation customization options
+            Adding responsive spacing and sizing utilities
+            Switching from the pixels unit in CSS to root ems
+            Increasing global font size from 14px to 16px for enhanced readability
+            Dropping the panel, thumbnail, pager, and well components
+            Dropping the Glyphicons icon font
+            Huge number[quantify] of utility classes
+            Improved form styling, buttons, drop-down menus, media objects and image classes
+            Bootstrap 4 supports the latest versions of Google Chrome, Firefox, Internet Explorer, Opera, and Safari (except on Windows). It additionally supports back to IE10 and the latest Firefox Extended Support Release (ESR).[19]
+            
+            Bootstrap 5
+            Bootstrap 5 was officially released on May 5, 2021.[20][21]
+            
+            Major changes include:[22]
+            
+            New offcanvas menu component
+            Removing dependence on jQuery in favor of vanilla JavaScript
+            Rewriting the grid to support responsive gutters and columns placed outside of rows
+            Migrating the documentation from Jekyll to Hugo
+            Dropping support for Internet Explorer[23]
+            Moving testing infrastructure from QUnit to Jasmine
+            Adding custom set of SVG icons[24]
+            Adding CSS custom properties
+            Improved API
+            Enhanced grid system
+            Improved customizing docs
+            Updated forms
+            RTL support
+            Built in darkmode support
+            See also
+                Free and open-source software portal
+            CSS framework
+            jQuery Mobile
+            JavaScript framework
+            JavaScript library
+            Tailwind CSS
+            Also, several web frameworks support rendering in Bootstrap.[25][26]
+            
+            References
+             "Release 5.3.3". February 20, 2024. Retrieved February 20, 2024.
+             "bootstrap/LICENSE". Github.
+             "bootstrap/LICENSE (v3.0.3)". Github.
+             "Search · stars:>100000". GitHub. Retrieved December 4, 2022.
+             "Usage statistics and market share of Bootstrap for websites". w3techs.com. Retrieved January 24, 2023.
+             "Bootstrap Containers · Bootstrap v5.0".
+             Otto, Mark (January 17, 2012). "Bootstrap in A List Apart No. 342". Mark Otto's blog. Archived from the original on October 28, 2016. Retrieved February 23, 2017.
+             Otto, Mark (August 19, 2011). "Bootstrap from Twitter". Developer Blog. Twitter. Archived from the original on February 23, 2017. Retrieved February 23, 2017.
+             "About". Bootstrap. August 19, 2011. Retrieved February 23, 2017.
+             Otto, Mark (January 31, 2012). "Say hello to Bootstrap 2.0". Developer Blog. Twitter. Archived from the original on February 23, 2017. Retrieved February 23, 2017.
+             Otto, Mark (September 29, 2012). "Onward". blog.getbootstrap.com.
+             "Bootstrap Blog - Bootstrap 3 released".
+             Otto, Mark (August 19, 2013). "Bootstrap 3 released". Archived from the original on October 21, 2016. Retrieved February 23, 2017.
+             "Bootstrap 3 plans". December 10, 2012.
+             Otto, Mark (October 29, 2014). "Bootstrap 3.3.0 released". Archived from the original on July 24, 2016. Retrieved February 23, 2017.
+             Otto, Mark (August 19, 2015). "Bootstrap 4 alpha". Archived from the original on January 23, 2017. Retrieved February 23, 2017.
+             Otto, Mark; Thornton, Jacob (August 10, 2017). "Bootstrap 4 Beta". Retrieved August 16, 2017.
+             "Bootstrap 4". blog.getbootstrap.com. January 18, 2018. Retrieved February 5, 2021.
+             "Supported browsers". Bootstrap. Retrieved February 23, 2017.
+             "Release Release v5.0.0 (#33647) · twbs/bootstrap". GitHub. Retrieved May 5, 2021.
+             "Bootstrap 5". blog.getbootstrap.com. May 5, 2021.
+             "Bootstrap 5 grid by MartijnCuppens · Pull Request #28517 · twbs/bootstrap". GitHub. Retrieved September 29, 2019.
+             "v5: drop Internet Explorer support by XhmikosR · Pull Request #30377 · twbs/bootstrap". GitHub. Retrieved April 7, 2020.
+             "Bootstrap Icons". Retrieved November 7, 2022.
+             "Bootstrap-Flask". HelloFlask. Retrieved November 7, 2022.
+             "Bootstrap-Django". zelenij. Retrieved November 7, 2022.
+            External links
+            
+            Wikimedia Commons has media related to Bootstrap (framework).
+            Official website Edit this at Wikidata
+            Bootstrap on GitHub
+            Authority control databases: National Edit this at Wikidata	
+            Germany
+            Categories: 2011 softwareCSS frameworksFree software programmed in JavaScriptHTMLJavaScript librariesSoftware using the MIT licenseTwitterWeb designWeb developmentResponsive web designMobile web
+            This page was last edited on 31 July 2024, at 15:58 (UTC).
+            Text is available under the Creative Commons Attribution-ShareAlike License 4.0; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.</p>
+    <br></br>
+            <footer>
+        <b><center><p>Author of the page</p>
+        <p><a href="#">abc@gmail.com</a></center>
+        </footer>
+        </body>
+</html>
